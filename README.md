@@ -49,11 +49,16 @@ Change Log (JSON + Markdown)
 
 ## Dataset Note
 
-The assignment dataset contained example transcripts.  
-Additional synthetic transcripts were created to simulate multiple
-accounts and demonstrate batch pipeline execution.
+Demo and onboarding transcripts are excluded from this repository
+to comply with the assignment requirement of not publishing raw
+customer data.
 
-No real customer recordings or sensitive data are included.
+To run the pipeline locally, place transcripts in the following format:
+
+dataset/
+   <account_id>/
+      demo.txt
+      onboarding.txt
 
 ---
 
@@ -318,6 +323,7 @@ Running the pipeline again regenerates outputs based on the latest transcripts w
 * Direct Retell API integration
 * Advanced entity extraction using NLP models
 * Automatic transcript ingestion pipeline
+
 
 
 
