@@ -1,0 +1,16 @@
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+dataset/*
+!dataset/.gitkeep
+
+.env
+.env.*
+
+.DS_Store
+Thumbs.db
+
+outputs/accounts/*
+!outputs/accounts/.gitkeep
