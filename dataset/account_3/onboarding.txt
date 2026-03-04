@@ -1,0 +1,20 @@
+I just want to confirm a few of the details for our call handling setup.
+
+Our office hours are Monday through Friday from 9 AM to 6 PM Eastern time.
+
+During those hours the assistant should collect the caller’s name, phone number,
+and a short description of the plumbing issue before forwarding the request to
+our scheduling team.
+
+Emergency situations include pipe bursts, major water leaks, or flooding inside
+the home.
+
+If a caller reports an emergency plumbing issue, the assistant should attempt to
+transfer the call directly to the on-call plumber.
+
+If the transfer cannot be completed, the assistant should reassure the caller
+that someone from our team will return their call shortly and the request should
+be marked as urgent.
+
+For non-emergency requests, the assistant should simply log the information so
+our office staff can schedule the job.

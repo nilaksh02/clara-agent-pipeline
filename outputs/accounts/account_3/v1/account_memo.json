@@ -1,0 +1,36 @@
+{
+  "account_id": "account_3",
+  "company_name": "Plumbing Service Company",
+  "business_hours": {
+    "days": "",
+    "start": "",
+    "end": "",
+    "timezone": ""
+  },
+  "office_address": "",
+  "services_supported": [
+    "plumbing services",
+    "maintenance services",
+    "installation services"
+  ],
+  "emergency_definition": [
+    "major plumbing emergency"
+  ],
+  "emergency_routing_rules": [
+    "Transfer to technician on duty"
+  ],
+  "non_emergency_routing_rules": [
+    "Log request and schedule during business hours"
+  ],
+  "call_transfer_rules": {
+    "timeout_seconds": 60,
+    "retry_count": 1
+  },
+  "integration_constraints": [],
+  "after_hours_flow_summary": "",
+  "office_hours_flow_summary": "",
+  "questions_or_unknowns": [
+    "business hours not specified"
+  ],
+  "notes": "Information extracted from demo transcript"
+}

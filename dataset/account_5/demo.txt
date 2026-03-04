@@ -1,0 +1,27 @@
+Hello, this is Alex calling from Keystone Property Maintenance.
+
+Our company provides general home maintenance services including appliance
+installation, minor repairs, seasonal property maintenance, and basic home
+inspection services.
+
+I wanted to explain how we usually handle incoming calls so the assistant can
+route requests properly.
+
+Our office hours are Monday through Friday from 8:30 AM to 5:30 PM Eastern time.
+
+During those hours the assistant should greet callers, collect their name and
+phone number, and ask what kind of service they are looking for.
+
+Most requests involve routine property maintenance tasks like installing appliances,
+repairing fixtures, or performing small home repairs.
+
+Those requests should be logged and scheduled during normal office hours.
+
+Occasionally we may receive emergency calls related to property damage, water leaks,
+or electrical hazards.
+
+In those cases the assistant should collect the caller’s contact information and
+attempt to transfer the call to the on-call technician.
+
+If the transfer cannot be completed, the assistant should reassure the caller
+that someone from our team will contact them shortly.

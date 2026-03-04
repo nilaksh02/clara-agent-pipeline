@@ -1,0 +1,30 @@
+Hello, this is Matthew from Horizon Climate Systems.
+
+We provide heating and air conditioning services for residential customers.
+Our technicians handle HVAC repairs, air conditioning installation, furnace
+maintenance, system inspections, and seasonal servicing.
+
+I wanted to walk through how our incoming calls should be handled.
+
+Our office hours are Monday through Friday from 8 AM to 5 PM Eastern time.
+During those hours our dispatcher schedules appointments and coordinates
+with technicians in the field.
+
+When someone calls, the assistant should greet the caller and ask how it can help.
+It should collect the caller’s name and phone number and ask what problem they
+are experiencing with their heating or cooling system.
+
+Most calls will involve routine service requests such as maintenance appointments,
+AC repairs, or installation consultations.
+
+Those should be logged and scheduled during business hours.
+
+Emergency situations include heating system failure during cold weather or air
+conditioning failure during extremely hot temperatures.
+
+If a caller reports an emergency HVAC problem, the assistant should collect the
+caller’s contact details and service address and attempt to transfer the call
+to the on-call technician.
+
+If the transfer cannot be completed, the assistant should reassure the caller
+that a technician will return their call shortly.

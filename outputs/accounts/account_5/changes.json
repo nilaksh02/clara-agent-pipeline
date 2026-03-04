@@ -1,0 +1,28 @@
+{
+  "business_hours": {
+    "before": {
+      "days": "",
+      "start": "",
+      "end": "",
+      "timezone": ""
+    },
+    "after": {
+      "days": "Mon-Fri",
+      "start": "08:00",
+      "end": "17:00",
+      "timezone": "EST"
+    }
+  },
+  "emergency_routing_rules": {
+    "before": [
+      "Transfer to technician on duty"
+    ],
+    "after": [
+      "Transfer emergency calls to technician on duty"
+    ]
+  },
+  "notes": {
+    "before": "Information extracted from demo transcript",
+    "after": "Updated using onboarding transcript"
+  }
+}

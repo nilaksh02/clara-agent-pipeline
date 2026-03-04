@@ -1,0 +1,38 @@
+Hello, this is Daniel calling from Northgate Electrical Services.
+
+We’re a residential and small commercial electrical contractor. Most of the work
+we handle involves things like electrical panel upgrades, troubleshooting wiring
+issues, installing indoor and outdoor lighting, breaker replacements, and general
+electrical maintenance for homes and small offices.
+
+I wanted to walk through how we typically handle incoming calls so the AI assistant
+can route them correctly.
+
+Our office is open Monday through Friday from 8 AM until 5 PM Eastern time. During
+those hours we have a dispatcher available who schedules service appointments and
+coordinates with technicians in the field.
+
+When someone calls during office hours, the assistant should greet the caller,
+ask how it can help, and collect the caller’s name and phone number. After that,
+it should ask for a short description of the electrical issue they’re experiencing.
+
+Most of our calls are routine service requests like installing new lighting fixtures,
+troubleshooting outlets that stopped working, replacing breakers, or general
+electrical inspections.
+
+Those kinds of calls should simply be logged and passed to our dispatcher so the
+appointment can be scheduled.
+
+There are some situations that we consider emergencies. For example, if a customer
+reports a power outage affecting part of their home, a burning smell coming from
+an outlet or electrical panel, exposed wiring, or sparking electrical equipment.
+
+In those cases the assistant should treat the call as urgent. It should collect the
+caller’s name, phone number, and service address, and then attempt to transfer the
+call directly to the technician on duty.
+
+If the transfer cannot be completed, the assistant should reassure the caller that
+an electrician will call them back shortly and make sure the request is marked
+as a high priority.
+
+That’s basically how we’d like our calls to be handled.

@@ -1,0 +1,15 @@
+We wanted to confirm how the AI assistant should handle incoming calls for Keystone Property Maintenance.
+
+Our office hours are Monday through Friday from 8:30 AM to 5:30 PM Eastern time.
+
+During those hours the assistant should greet callers, collect their name and phone number, and ask what type of property maintenance service they need.
+
+Most calls involve routine maintenance requests such as minor repairs, appliance installations, seasonal maintenance work, or home inspections. These types of requests should be logged and passed to our office team for scheduling.
+
+In some cases customers may call about urgent issues such as significant property damage, water leaks inside the home, or electrical hazards.
+
+If a caller reports an emergency situation like that, the assistant should collect their contact information and the property address and attempt to transfer the call to the on-call technician.
+
+If the technician cannot be reached, the assistant should inform the caller that someone from our team will contact them shortly and mark the request as urgent so it can be prioritized.
+
+We also want to make sure the assistant keeps the conversation short and only collects the information needed for routing the request to the appropriate technician.
