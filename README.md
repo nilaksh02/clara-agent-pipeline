@@ -47,6 +47,14 @@ Version Diff Engine
 Change Log (JSON + Markdown)
 ```
 
+## Dataset Note
+
+The assignment dataset contained example transcripts.  
+Additional synthetic transcripts were created to simulate multiple
+accounts and demonstrate batch pipeline execution.
+
+No real customer recordings or sensitive data are included.
+
 ---
 
 # System Components
@@ -310,6 +318,7 @@ Running the pipeline again regenerates outputs based on the latest transcripts w
 * Direct Retell API integration
 * Advanced entity extraction using NLP models
 * Automatic transcript ingestion pipeline
+
 
 
 
