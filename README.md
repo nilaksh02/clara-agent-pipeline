@@ -1,3 +1,101 @@
+// src/components/layout/Footer.js
+// Shared footer for the app shell. Lives in layout/ next to Header/Sidebar/MainLayout.
+// Adapted from the reference: fixed the logo path to this repo's assets folder.
+// NOTE: this needs Footer.css (same folder) and MainLayout.js to render <Footer />.
+
+import "./Footer.css";
+
+const socialLinks = [
+  {
+    name: "Facebook",
+    href: "https://www.facebook.com",
+    path: "M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z",
+  },
+  {
+    name: "Twitter / X",
+    href: "https://www.twitter.com",
+    path: "M18.9 3H22l-7.6 8.7L23 21h-6.9l-5.4-6.6L4.4 21H1.3l8.1-9.3L1 3h7l4.9 6 6-6zM17.7 19.1h1.7L7.4 4.8H5.6l12.1 14.3z",
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com",
+    path: "M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9z",
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com",
+    path: "M23 12s0-3.5-.4-5.2c-.3-.9-1-1.6-1.9-1.9C19 4.5 12 4.5 12 4.5s-7 0-8.7.4c-.9.3-1.6 1-1.9 1.9C1 8.5 1 12 1 12s0 3.5.4 5.2c.3.9 1 1.6 1.9 1.9 1.7.4 8.7.4 8.7.4s7 0 8.7-.4c.9-.3 1.6-1 1.9-1.9.4-1.7.4-5.2.4-5.2zM9.8 15.3V8.7l5.7 3.3z",
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com",
+    path: "M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.4a6.4 6.4 0 1 0 0 12.8 6.4 6.4 0 0 0 0-12.8zm0 10.6a4.2 4.2 0 1 1 0-8.4 4.2 4.2 0 0 1 0 8.4zm6.6-10.9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z",
+  },
+];
+
+const footerLinks = [
+  { label: "Contact us", href: "/contact-us" },
+  { label: "Privacy policy", href: "/privacy-policy" },
+  { label: "Our locations", href: "/our-locations" },
+  { label: "Our Code of Conduct and Ethics", href: "/code-of-conduct-and-ethics" },
+  { label: "Cookie policy", href: "/cookie-policy" },
+  { label: "Accessibility", href: "/accessibility" },
+];
+
+function Footer() {
+  return (
+    <footer className="site-footer">
+      <div className="footer-top">
+        <div className="footer-brand">
+          {/* Path fixed for this repo: assets/images/ (reference used assets/logo/) */}
+          <img
+            src="/assets/images/logo.png"
+            className="footer-logo-img"
+            alt="Standard Chartered"
+          />
+        </div>
+
+        <div className="footer-social">
+          {socialLinks.map((social) => (
+            <a
+              key={social.name}
+              className="footer-social-link"
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.name}
+            >
+              <svg className="footer-social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d={social.path} />
+              </svg>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div className="footer-bottom">
+        <ul className="footer-links">
+          {footerLinks.map((link) => (
+            <li key={link.label}>
+              <a className="footer-link" href={link.href}>
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <p className="footer-copyright">
+          &copy; Standard Chartered 2026
+          <br />
+          All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
+
 # Clara Agent Automation Pipeline
 
 ## Overview
