@@ -1,3 +1,84 @@
+// src/pages/dashboard/Dashboard.js
+// Logic unchanged — only the header is now a branded gradient hero band.
+
+import { useMemo, useState } from "react";
+import "./Dashboard.css";
+import ProductSummaryRow from "./ProductSummaryRow";
+import PriorityCustomerTable from "./PriorityCustomerTable";
+import { sortByPriorityThenDueDate } from "./dashboard.utils";
+
+export default function Dashboard() {
+  const priorityCustomers = [
+    { id: "C101", name: "Sumit Sharma", priority: "High", dueDate: "2026-06-10", category: "Bond", reason: "Bond Maturity", amount: 100000 },
+    { id: "C102", name: "Akshada Rao", priority: "High", dueDate: "2026-06-12", category: "Insurance", reason: "Claim Processing", amount: 40000 },
+    { id: "C103", name: "Nilaksh Gupta", priority: "High", dueDate: "2026-06-15", category: "FD", reason: "FD Renewal", amount: 500000 },
+    { id: "C104", name: "Aditi Menon", priority: "Medium", dueDate: "2026-06-18", category: "Portfolio Management", reason: "Rebalancing Suggested", amount: 30000 },
+    { id: "C105", name: "Rajnish Kumar", priority: "Medium", dueDate: "2026-06-20", category: "Insurance", reason: "Premium Due", amount: 20000 },
+    { id: "C106", name: "Sneha Reddy", priority: "Low", dueDate: "2026-06-25", category: "FD", reason: "Fee Due", amount: 2000 },
+  ];
+
+  const productSummary = [
+    { key: "fd", label: "FD", count: 42, totalValue: 5000000 },
+    { key: "mutualFund", label: "Mutual Fund", count: 31, totalValue: 6200000 },
+    { key: "bond", label: "Bond", count: 15, totalValue: 3000000 },
+    { key: "insurance", label: "Insurance", count: 27, totalValue: 9000000 },
+    { key: "portfolioManagement", label: "Portfolio Management", count: 19, totalValue: 12500000 },
+  ];
+
+  const [query, setQuery] = useState("");
+
+  const sortedCustomers = useMemo(
+    () => sortByPriorityThenDueDate(priorityCustomers),
+    [priorityCustomers]
+  );
+
+  const filteredCustomers = useMemo(() => {
+    if (!query.trim()) return sortedCustomers;
+    const q = query.toLowerCase();
+    return sortedCustomers.filter(
+      (c) => c.name.toLowerCase().includes(q) || c.category.toLowerCase().includes(q)
+    );
+  }, [sortedCustomers, query]);
+
+  return (
+    <div className="dashboard-page">
+      {/* [PAGE] Branded gradient hero header */}
+      <div className="dashboard-hero">
+        <div className="dashboard-hero-row">
+          <div>
+            <h1 className="dashboard-title">Dashboard</h1>
+            <p className="dashboard-subtitle">Welcome back. Here is your overview for today.</p>
+          </div>
+          <div className="dashboard-hero-actions">
+            <button className="dashboard-hero-btn-ghost">Export Report</button>
+            <button className="dashboard-hero-btn-white">+ New Customer</button>
+          </div>
+        </div>
+      </div>
+
+      <ProductSummaryRow products={productSummary} />
+
+      <div className="dashboard-priority-section">
+        <div className="dashboard-priority-header">
+          <h2 className="dashboard-priority-title">Priority Customers</h2>
+          <input
+            className="dashboard-search-input"
+            placeholder="Search by name or category..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </div>
+
+        <PriorityCustomerTable
+          customers={filteredCustomers}
+          onSelectCustomer={(id) => console.log("navigate to customer:", id)}
+        />
+      </div>
+    </div>
+  );
+}
+
+
 # Clara Agent Automation Pipeline
 
 ## Overview
